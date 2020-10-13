@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fizz Buzz</title>
+</head>
+<body>
+<button onclick="fizzBuzz()">Fizz Buzz</button>
+<script>
+    function fizzBuzz() {
+        let n = +prompt("Nhap so: ");
+        let i = 1;
+        let count = 0;
+        while (count < n){
+            let fizz = (i%3 === 0);
+            let buzz = (i%5 === 0);
+
+            if(fizz && buzz){
+                document.write("FizzBuzz");
+            }else if(buzz){
+                document.write("Buzz");
+            }else if(fizz){
+                document.write("Fizz")
+            }else {
+                document.write(i);
+            }
+
+            document.write("<br>");
+            count++;
+            i++;
+        }
+    }
+</script>
+</body>
+</html>
